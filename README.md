@@ -15,8 +15,6 @@ curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/MCBE-ScriptPackBuilde
 ## Supported Versions
 - [x] 1.19.60.22+
 - [x] 1.19.30+
-- [ ] 1.18.x
-- [ ] 1.17.x
-- [ ] 1.16.210+
 
-TODO: Support for lower versions.
+**We are not going to support 1.16.210 ~ 1.18.x**
+
