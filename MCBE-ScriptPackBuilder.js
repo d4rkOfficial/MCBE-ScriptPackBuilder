@@ -12,7 +12,7 @@
 |__) |  | | |    |  \\ |__  |__)               
 |__) \\__/ | |___ |__/ |___ |  \\               
 	                                              
-`;function n(M){M=M.split(".").map(P=>Number(P));let N=Object.keys(g).sort((Q,R)=>{[Q,R]=[R,Q];Q=Q.split(".");R=R.split(".");return o(Q,R)});let O;for(let S of N){if(o(M,S)<0){break}else{O=S}}return O}function o(T,U){return(T[0]-U[0])*1e6+(T[1]-U[1])*1e4+(T[2]-U[2])*100+(T[3]-U[3])}const p=`import * as mc from "@minecraft/server"
+`;function n(M){M=M.split(".").map(P=>Number(P));M.length===3&&M.push(0);M.length===2&&M.push(0,0);M.length===1&&M.push(0,0,0);let N=Object.keys(g).sort((Q,R)=>{[Q,R]=[R,Q];Q=Q.split(".");R=R.split(".");return o(Q,R)});let O;for(let S of N){S=S.split(".").map(T=>Number(T));if(o(M,S)<0){break}else{O=S}}if(!O)O=N[0];return O}function o(U,V){return(U[0]-V[0])*1e6+(U[1]-V[1])*1e4+(U[2]-V[2])*100+(U[3]-V[3])>0?1:-1}const p=`import * as mc from "@minecraft/server"
 let time = 0
 let timer = mc.world.events.tick.subscribe(_ => {
 	if (++time === 300) {
@@ -21,4 +21,4 @@ let timer = mc.world.events.tick.subscribe(_ => {
 		  .runCommand("say Hello, world!")
 	}
 })
-`;(async function V(){d(m);const W="1.19.60.22";let X=await e(`Minecraft Version(default ${W}): `)??W;let Y=n(X);if(!Y){d("This version is not supported.");return}let{generate:Z}=g[Y];let $=await Z();await j("manifest.json",$);await k("scripts");await j("scripts/index.js",p);d("done.");process.exit(0)})()})();
+`;(async function W(){d(m);const X="1.19.60.22";let Y=await e(`Minecraft Version(default ${X}): `)??X;let Z=n(Y);if(!Z){d("This version is not supported.");return}let{generate:$}=g[Z];let _=await $();await j("manifest.json",_);await k("scripts");await j("scripts/index.js",p);d("done.");process.exit(0)})()})();
