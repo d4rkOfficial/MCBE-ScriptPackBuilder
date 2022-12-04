@@ -38,11 +38,11 @@ const manifestTemplates = {
          	},
 					{
 						module_name: '@minecraft/server-gametest',
-						version: '1.1.0-beta'
+						version: '1.0.0-beta'
           },
 					{
 						module_name: '@minecraft/server-ui',
-						version: '1.1.0-beta'
+						version: '1.0.0-beta'
           }
 				]
 			}, null, 2)
