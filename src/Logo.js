@@ -1,6 +1,6 @@
 function pretreatment(str) {
 	return str
-	  .join('')
+		.join('')
 		.split('\n')
 		.join('\n  ')
 }

@@ -9,9 +9,9 @@ import { helloWorld } from './HelloWorld.js'
 	print(logo)
 	const defaultVersion = '1.19.60.22'
 	let gameVersion = (
-	  await prompt(
-	  	`Minecraft Version(default ${defaultVersion}): `
-	  )
+		await prompt(
+			`Minecraft Version(default ${defaultVersion}): `
+		)
 	) ?? defaultVersion
 	let manifestVersion = testVersion(gameVersion)
 	if (!manifestVersion) {
