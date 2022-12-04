@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "description": "",
-    "name": "",
+    "description": "demo",
+    "name": "demo",
     "uuid": "3af34e58-9892-2ae5-9a9e-4df8b5d423da",
     "version": [
       0,
@@ -17,7 +17,7 @@
   },
   "modules": [
     {
-      "description": "",
+      "description": "demo",
       "type": "script",
       "language": "javascript",
       "uuid": "c42b4c62-2c8e-66ae-6414-18183766231b",
@@ -32,15 +32,15 @@
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.0.0-beta"
+      "version": "1.1.0-beta"
     },
     {
       "module_name": "@minecraft/server-gametest",
-      "version": "1.0.0-beta"
+      "version": "1.1.0-beta"
     },
     {
       "module_name": "@minecraft/server-ui",
-      "version": "1.0.0-beta"
+      "version": "1.1.0-beta"
     }
   ]
 }
