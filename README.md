@@ -10,10 +10,10 @@ Generate your script project in one line of command.
 # Create Project Directory
 mkdir Project
 cd Project
-# Initialize
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
 # Initial Icon (If needed)
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/icon -o pack_icon.png
+# Initialize
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
 ```
 
 ## Supported Versions

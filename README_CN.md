@@ -10,10 +10,10 @@
 # 新建文件夹
 mkdir Project
 cd Project
-# 初始化
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
 # 初始图标 (如果需要的话)
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/icon -o pack_icon.png
+# 初始化
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
 ```
 
 ## 支持的版本
