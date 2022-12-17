@@ -12,8 +12,10 @@ mkdir Project
 cd Project
 # 初始化
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
+# 初始图标 (如果需要的话)
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/icon -o pack_icon.png
 ```
 
 ## 支持的版本
 - [x] 1.19.60.22+
-- [ ] lower
+- [ ] 不支持更低版本
