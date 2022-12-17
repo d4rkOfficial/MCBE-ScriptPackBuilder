@@ -1,19 +1,19 @@
 # MCBE-ScriptPackBuilder
 
-[简体中文](./README_CN.md) | English
+简体中文 | [English](./README.md)
 
-Generate your script project in one line of command.
+一行命令生成MCBE脚本包工程
 
-## Get Started
+## 快速开始
 
 ```sh
-# Create Project Directory
+# 新建文件夹
 mkdir Project
 cd Project
-# Initialize
+# 初始化
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
 ```
 
-## Supported Versions
+## 支持的版本
 - [x] 1.19.60.22+
 - [ ] lower
