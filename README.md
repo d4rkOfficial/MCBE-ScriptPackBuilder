@@ -9,7 +9,7 @@ Generate your script project in one line of command.
 mkdir Project
 cd Project
 # Initialize
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/MCBE-ScriptPackBuilder.js -o .js && node .js&& rm .js
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js&& rm .js
 ```
 
 ## Supported Versions
