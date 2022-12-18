@@ -4,8 +4,8 @@ import { prompt } from './IO.js'
 const createJSON = (NAME, DESC) => JSON.stringify({
 	format_version: 2,
 	header: {
-		description: DESC ?? '-',
-		name: NAME ?? '-',
+		description: DESC.trim() !== '' ? DESC : '-',
+		name: NAME.trim() !== '' ? NAME : '-',
 		uuid: randomUUID(),
 		version: [0, 0, 1],
 		min_engine_version: [1, 19, 0]

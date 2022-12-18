@@ -1,8 +1,5 @@
 function randomUUID() {
-	const random = () => Math
-		.random()
-		.toString(16)
-		.slice(-4)
+	const random = () => Math.random().toString(16).slice(-4)
 	let uuid = ''
 	uuid += random()
 	uuid += random()

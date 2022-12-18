@@ -1,22 +1,13 @@
 const helloWorld = [
 	"import { world, system } from '@minecraft/server'",
-	"let tickIndex = 0",
-	"const print = (...contents) => {",
-	"  return world.getDimension('overworld')",
-	"    .runCommandAsync('say ' + contents.join(' '))",
-	"}",
 	"",
-	"system.run(function mainTick() {",
-	"  try {",
+	"system.run(function mainTick(tickIndex = 0) {",
 	"    tickIndex ++",
 	"    if (tickIndex === 100) {",
-	"      print('Hello, world!')",
+	"        world.say(' Hello, world! ')",
+	"    } else {",
+	"        system.run(() => mainTick(tickIndex))",
 	"    }",
-	"  } catch (error) {",
-	"    print('§cError: ' + error)",
-	"  }",
-	"",
-	"  system.run(mainTick)",
 	"})"
 ].join('\n')
 

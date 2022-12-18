@@ -10,7 +10,7 @@ function print(content) {
 }
 
 async function prompt(question) {
-	console.log(question)
+	print(question)
 	return await new Promise((resolve) => {
 		readline.on('line', (data) => {
 			resolve(data)
