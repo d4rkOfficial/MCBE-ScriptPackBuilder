@@ -20,4 +20,5 @@ curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.py -o _ && py
 
 ## 支持的版本
 - [x] 1.19.60.22+
+- [x] 1.19.30.25
 - [ ] 更低版本暂不支持
