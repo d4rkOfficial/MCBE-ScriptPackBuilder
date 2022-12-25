@@ -2,18 +2,20 @@
 
 [简体中文](./README_CN.md) | English
 
-Generate your script project in one line of command.
+Generate your MCBE script pack project using one line of command.
 
 ## Get Started
 
+Create a new empty directory, then execute:
+
 ```sh
-# Create Project Directory
-mkdir Project
-cd Project
-# Initial Icon (If needed)
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/icon -o pack_icon.png
-# Initialize
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o .js && node .js && rm .js
+# Using Node.js
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o _ && node _ && rm _
+```
+
+```
+# Using Python3
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.py -o _ && python3 _ && rm _
 ```
 
 ## Supported Versions
