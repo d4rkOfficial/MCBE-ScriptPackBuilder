@@ -13,7 +13,7 @@
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o _ && node _ && rm _
 ```
 
-```
+```sh
 # 以 Python3 初始化
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.py -o _ && python3 _ && rm _
 ```

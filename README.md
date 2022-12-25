@@ -13,7 +13,7 @@ Create a new empty directory, then execute:
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o _ && node _ && rm _
 ```
 
-```
+```sh
 # Using Python3
 curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.py -o _ && python3 _ && rm _
 ```
