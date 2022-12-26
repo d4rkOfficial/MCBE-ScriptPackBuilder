@@ -9,14 +9,17 @@
 新建文件夹，然后执行：
 
 ```sh
-# 以 NodeJS 初始化
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o _ && node _ && rm _
+# 使用 Curl
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js _ && node _ && rm _
 ```
 
 ```sh
-# 以 Python3 初始化
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.py -o _ && python3 _ && rm _
+# 使用 wget
+wget -O _ https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js && node _ && rm _
 ```
+
+**确保您已经安装了NodeJS**
+
 
 ## 支持的版本
 - [x] 1.19.60.22+

@@ -38,7 +38,7 @@ import { createHelloWorldJS } from './helloworld.js'
 	
 	if (!([1, 2].includes(mcbe_vers))) {
 		print('This version is not temporarily supported.')
-		//versions under 1.17 is not supported
+		//versions under 1.19.30.25 is not supported
 		return
 	}
 

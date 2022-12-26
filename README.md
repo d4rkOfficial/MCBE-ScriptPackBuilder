@@ -8,15 +8,18 @@ Generate your MCBE script pack project using one line of command.
 
 Create a new empty directory, then execute:
 
+
 ```sh
-# Using Node.js
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js -o _ && node _ && rm _
+# Using Curl
+curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js _ && node _ && rm _
 ```
 
 ```sh
-# Using Python3
-curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.py -o _ && python3 _ && rm _
+# Using wget
+wget -O _ https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/builder.js && node _ && rm _
 ```
+
+**Make sure that you have installed NodeJS**
 
 ## Supported Versions
 - [x] 1.19.60.22+
