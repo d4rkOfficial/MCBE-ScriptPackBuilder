@@ -1,10 +1,12 @@
 import { print, ask, choose, askYesNo } from './cli.js'
 import { testEmptyFolder, createFolder } from './fs.js'
 import { createManifest } from './manifest.js'
-import { downloadIcon, randomUUID, printLogo } from './utils.js'
+import { runCommand, downloadIcon, randomUUID, printLogo } from './utils.js'
 import { createHelloWorldJS } from './helloworld.js'
 
 (async function main() {
+	
+	const server = false
 	
 	const isEmptyFolder = await testEmptyFolder()
 	if (!isEmptyFolder) {
@@ -59,9 +61,22 @@ import { createHelloWorldJS } from './helloworld.js'
 	print('\x1B[32mDownloading pack_icon.png')
 	try {
 		await downloadIcon()
+		print('\x1B[37mSuccess!')
 	} catch {
 		print('\x1B[31mNetwork Error: Unable to download default pack_icon.png')
 	}
+	
+	print('\x1B[32mInstalling Type Docs')
+	try {
+	await runCommand('npm i @minecraft/server@1.1.0-beta.1.19.60-preview.24')
+	await runCommand('npm i @minecraft/server-gametest@1.0.0-beta.1.19.60-preview.24')
+	await runCommand('npm i npm i @minecraft/server-ui@1.0.0-beta.1.19.60-preview.24')
+	
+	if (server) { /*#__pure__*/
+	  await runCommand('npm i @minecraft/server-net@latest')
+	  await runCommand('npm i @minecraft/server-admin@latest')
+	}
+	} catch {}
 
 	print('\x1B[37mFinished! \n')
 

@@ -2,15 +2,18 @@ import { print } from './cli.js'
 
 const child_process = require('child_process')
 
-async function downloadIcon() {
-	const download = 'curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/icon -o pack_icon.png'
+async function runCommand(cmd) {
 	return await new Promise((resolve, reject) => {
-		const sub_process = child_process.exec(download, (error, stdout) => {
+		const sub_process = child_process.exec(cmd, (error, stdout) => {
 			if (error) reject(error)
 			else resolve(stdout)
 			sub_process.kill()
 		})
 	})
+}
+
+async function downloadIcon() {
+	return runCommand('curl https://d4rkofficial.github.io/MCBE-ScriptPackBuilder/icon -o pack_icon.png')
 }
 
 function randomUUID() {
@@ -53,4 +56,4 @@ function printLogo() {
   print(logo)
 }
 
-export { downloadIcon, randomUUID, printLogo }
+export { runCommand, downloadIcon, randomUUID, printLogo }
